@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo fase 1</title>
+    <title>FitEvolucion - Ropa Deportiva</title>
+    <meta name="description" content="FitEvolucion - Dale gusto a tu comodidad con nuestra ropa deportiva">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,177 +13,151 @@
 <body>
     <header>
         <div class="container">
-            <label for="menu">
-                <img src="" class="" alt="">
-            </label>
             <nav class="navbar">
                 <div class="menu-1">
-                    <button>Menu</button>
-                    <input type="text" placeholder="Buscar">
+                    <button aria-label="Abrir menú">Menu</button>
+                    <input type="text" placeholder="Buscar" aria-label="Buscar productos">
                 </div>
                 <div class="menu-2">
                     <h1>Fitness</h1>
                 </div>
                 <div class="generals">
-                    <a href="#"><img src="imagenes/voluntario.png" alt="usuario" class="icon"></a>
-                    <a href="#"><img src="imagenes/me-gusta.png" alt="me gusta" class="icon"></a>
+                    <a href="#usuario"><img src="imagenes/voluntario.png" alt="Perfil de usuario" class="icon"></a>
+                    <a href="#favoritos"><img src="imagenes/me-gusta.png" alt="Favoritos" class="icon"></a>
                     <div class="cart">
-                        <a href="#"><img src="imagenes/carrito-de-compras.png" alt="carrito" class="icon"></a>
+                        <a href="#carrito"><img src="imagenes/carrito-de-compras.png" alt="Carrito de compras" class="icon"></a>
                         <span class="cart-count"></span>
                     </div>
-                    <select>
+                    <select aria-label="Seleccionar idioma">
                         <option>ESP</option>
                     </select>
-                    <select>
+                    <select aria-label="Seleccionar país">
                         <option>COL</option>
                     </select>
                 </div>
+            </nav>
         </div>
+
+        <div class="slider-txt">
+            <h2>FitEvolucion</h2>
+            <p>Dale gusto a tu comodidad</p>
+            <a href="#productos" class="btn">Ver más</a>
         </div>
-        </nav>
-        </div>
+
         <div class="header-content container">
             <div class="swiper myswiper-1">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="slider">
                             <div class="slider-img">
-                                <img src="imagenes/carrusel1.jpg" alt="">
+                                <img src="imagenes/carrusel1.jpg" alt="Persona haciendo ejercicio con ropa deportiva">
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="slider">
-                            <div class="slider-txt">
-                                <h2>FitEvolucion</h2>
-                                <p>Dale gusto a tu comodidad</p>
-                                <a href="#" class="btn">Ver más</a>
+                            <div class="slider-img">
+                                <img src="imagenes/carrusel2.jpg" alt="Colección de ropa deportiva">
                             </div>
-                            <div class="slider-img"><img src="imagenes/carrusel2.jpg" alt=""></div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="slider">
-                            <div class="slider-txt">
+                            <div class="slider-img">
+                                <img src="imagenes/carrusel3.jpg" alt="Modelos usando ropa FitEvolucion">
                             </div>
-                            <div class="slider-img"><img src="imagenes/carrusel3.jpg" alt=""></div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-                <div class="swiper-button-pagination"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
-        
+    </header>
 
-    <main class="products">
+    <main class="products" id="productos">
         <div class="tabs container">
-
             <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
             <label for="tab1">FitEvolution</label>
             <div class="tab">
                 <div class="swiper myswiper-2" id="swiper1">
                     <div class="swiper-wrapper">
-
-
                         <div class="swiper-slide">
-                            <div class="product">
+                            <article class="product">
                                 <div class="product-img">
                                     <h4>Servicios Destacados</h4>
-                                    <img src="imagenes/Compra1.webp" alt="">
-
+                                    <img src="imagenes/Compra1.webp" alt="Jogger bota angosta para hombre">
                                 </div>
                                 <div class="product-txt">
                                     <h4>Jogger bota angosta</h4>
                                     <p>Comodidad prenda casual y deportiva.</p>
                                     <span class="price">$126.000</span>
-                                    <button onclick="myfunction()">Ver mas</button>
-
+                                    <button class="ver-mas" data-producto="jogger">Ver más</button>
                                 </div>
-
-                            </div>
-
+                            </article>
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="product">
+                            <article class="product">
                                 <div class="product-img">
                                     <h4>Servicios Destacados</h4>
-                                    <img src="imagenes/Compra2.webp" alt="">
-
+                                    <img src="imagenes/Compra2.webp" alt="Licra deportiva para mujer">
                                 </div>
                                 <div class="product-txt">
                                     <h4>Licra Deportiva</h4>
-                                    <p>ofrecen elasticidad y transpirabilidad para garantizar comodidad y libertad de
+                                    <p>Ofrecen elasticidad y transpirabilidad para garantizar comodidad y libertad de
                                         movimiento.</p>
                                     <span class="price">$85.000</span>
-                                    <button onclick="myfunction()">Ver mas</button>
-
+                                    <button class="ver-mas" data-producto="licra">Ver más</button>
                                 </div>
-
-                            </div>
-
+                            </article>
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="product">
+                            <article class="product">
                                 <div class="product-img">
                                     <h4>Servicios Destacados</h4>
-                                    <img src="imagenes/Compra 3.webp" alt="">
-
+                                    <img src="imagenes/Compra 3.webp" alt="Ciclista elemental - licra para ciclismo">
                                 </div>
                                 <div class="product-txt">
                                     <h4>Ciclista Elemental</h4>
                                     <p>Licras para mujer desarrolladas para las grandes exigencias de los ciclistas</p>
                                     <span class="price">$154.000</span>
-                                    <button onclick="myfunction()">Ver mas</button>
-
+                                    <button class="ver-mas" data-producto="ciclista">Ver más</button>
                                 </div>
-
-                            </div>
-
+                            </article>
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="product">
+                            <article class="product">
                                 <div class="product-img">
                                     <h4>Servicios Destacados</h4>
-                                    <img src="imagenes/Compra4.webp" alt="">
-
+                                    <img src="imagenes/Compra4.webp" alt="Esqueleto en malla deportivo">
                                 </div>
                                 <div class="product-txt">
                                     <h4>Esqueleto en Malla</h4>
-                                    <p>Esqueleto deportivo, con bloques en malla. Secado rápido y antibacterial. Su silueta es semi ajusta</p>
+                                    <p>Esqueleto deportivo, con bloques en malla. Secado rápido y antibacterial. Su silueta es semi ajustada</p>
                                     <span class="price">$143.000</span>
-                                    <button onclick="myfunction()">Ver mas</button>
-
+                                    <button class="ver-mas" data-producto="esqueleto">Ver más</button>
                                 </div>
-
-                            </div>
-
+                            </article>
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="product">
+                            <article class="product">
                                 <div class="product-img">
                                     <h4>Servicios Destacados</h4>
-                                    <img src="imagenes/Compra5.webp" alt="">
-
+                                    <img src="imagenes/Compra5.webp" alt="Licras y pantalones deportivos">
                                 </div>
                                 <div class="product-txt">
                                     <h4>Licras y pantalones</h4>
-                                    <p>cada malla te ofrece la cobertura que necesitas para que superes tus límites con
-                                        esti</p>
+                                    <p>Cada malla te ofrece la cobertura que necesitas para que superes tus límites con estilo</p>
                                     <span class="price">$99.900</span>
-                                    <button onclick="myfunction()">Ver mas</button>
-
+                                    <button class="ver-mas" data-producto="licras-pantalones">Ver más</button>
                                 </div>
-
-                            </div>
-
+                            </article>
                         </div>
-
                     </div>
 
                     <div class="swiper-button-next"></div>
@@ -191,14 +166,14 @@
             </div>
         </div>
     </main>
-    <section class="testimonios">
+
+    <section class="testimonios" id="testimonios">
         <h2>Testimonios Clientes</h2>
         <div class="testimonios-contenedor">
-
             <div class="tarjeta">
-                <img src="imagenes/sonrisa.jpg" alt="Jessiva Alvarez">
-                <h3>Jessiva Alvarez</h3>
-                <div class="estrellas">★★★★★</div>
+                <img src="imagenes/sonrisa.jpg" alt="Foto de Jessica Alvarez">
+                <h3>Jessica Alvarez</h3>
+                <div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div>
                 <p>
                     Me sorprendió el tipo de textura y materiales que están hecha,
                     siento mucha comodidad, valió la pena la compra.
@@ -206,119 +181,140 @@
             </div>
 
             <div class="tarjeta">
-                <img src="imagenes/joven.jpg" alt="Frank Ocampo">
+                <img src="imagenes/joven.jpg" alt="Foto de Frank Ocampo">
                 <h3>Frank Ocampo</h3>
-                <div class="estrellas">★★★★★</div>
+                <div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div>
                 <p>
-                    Excelente, me gustó la opción elegida, lo que uno necesita comodidad la entrenar.
+                    Excelente, me gustó la opción elegida, lo que uno necesita comodidad al entrenar.
                 </p>
             </div>
 
             <div class="tarjeta">
-                <img src="imagenes/hombre.jpg" alt="Sebastian Rodríguez">
+                <img src="imagenes/hombre.jpg" alt="Foto de Sebastian Rodríguez">
                 <h3>Sebastian Rodríguez</h3>
-                <div class="estrellas">★★★★★</div>
+                <div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div>
                 <p>
                     La variedad que manejan en cada prenda es genial, les recomiendo mucho la página. Saludos.
                 </p>
             </div>
-
-        </div>
-
-        <section class="call-to-action">
-            <div class="circle-content">
-                <div class="icon-email"></div>
-                <h2>Llamado a la Accion</h2>
-                <p>Anímate y regístrate para que estés enterado de toda nuestra colección.</p>
-                <div class="input-group">
-                    <input type="email" placeholder="Email">
-                    <button>Enviar</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- PARTICIPA AHORA Y CONTÁCTATE -->
-        <section class="participa-contacto">
-            <div class="participa">
-                <h3>Participa Ahora</h3>
-                <p>Recibe un BONO de descuento en tus primeras compras. ¡Te Esperamos!</p>
-            </div>
-
-            <div class="contact-form">
-                <h3>Contáctate con nosotros</h3>
-                <form>
-                    <div class="double-input">
-                        <input type="text" placeholder="Nombres">
-                        <input type="text" placeholder="Apellidos">
-                    </div>
-                    <div class="double-input">
-                        <input type="tel" placeholder="Teléfono">
-                        <input type="text" placeholder="Ciudad">
-                    </div>
-                    <textarea placeholder="Mensaje"></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
-
-        <div class="paginacion">
-            <span class="activo">1</span>
-            <span>2</span>
-            <span>3</span>
         </div>
     </section>
-    <footer class="footer container">
-        <img class="logo" src="imagenes/logo.png" alt="">
-        <div class="links">
-            <h4>Categorias</h4>
-            <ul>
-                <li><a href="#">Accesorios</a></li>
-                <li><a href="#">Hombre</a></li>
-                <li><a href="#">Mujer</a></li>
-                <li><a href="#">Todos</a></li>
 
+    <section class="call-to-action" id="newsletter">
+        <div class="circle-content">
+            <div class="icon-email"></div>
+            <h2>Llamado a la Acción</h2>
+            <p>Anímate y regístrate para que estés enterado de toda nuestra colección.</p>
+            <form class="input-group">
+                <label for="email-newsletter" class="sr-only">Email</label>
+                <input type="email" id="email-newsletter" placeholder="Email" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="participa-contacto" id="contacto">
+        <div class="participa">
+            <h3>Participa Ahora</h3>
+            <p>Recibe un BONO de descuento en tus primeras compras. ¡Te Esperamos!</p>
+        </div>
+
+        <div class="contact-form">
+            <h3>Contáctate con nosotros</h3>
+            <form action="procesar.php" method="post">
+                <div class="double-input">
+                    <label for="nombres" class="sr-only">Nombres</label>
+                    <input type="text" id="nombres" name="nombres" placeholder="Nombres" required>
+                    
+                    <label for="apellidos" class="sr-only">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                </div>
+                <div class="double-input">
+                    <label for="telefono" class="sr-only">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                    
+                    <label for="ciudad" class="sr-only">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+                </div>
+                <label for="mensaje" class="sr-only">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="paginacion">
+        <span class="activo">1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+
+    <footer class="footer container">
+        <img class="logo" src="imagenes/mancuernas.jpg" alt="Logo FitEvolution">
+        <div class="links">
+            <h4>Categorías</h4>
+            <ul>
+                <li><a href="#accesorios">Accesorios</a></li>
+                <li><a href="#hombre">Hombre</a></li>
+                <li><a href="#mujer">Mujer</a></li>
+                <li><a href="#todos">Todos</a></li>
             </ul>
         </div>
+        
         <div class="links">
             <h4>About</h4>
             <ul>
-                <li><a href="#">Quienes somos</a></li>
-                <li><a href="#">Terminos y condiciones</a></li>
-                <li><a href="#">Envio</a></li>
-                <li><a href="#">Garantia</a></li>
-
+                <li><a href="#quienes-somos">Quienes somos</a></li>
+                <li><a href="#terminos">Términos y condiciones</a></li>
+                <li><a href="#envio">Envío</a></li>
+                <li><a href="#garantia">Garantía</a></li>
             </ul>
         </div>
+        
         <div class="links">
             <h4>Webshop</h4>
             <ul>
-                <li><a href="#">www.FitEvolution.com</a></li>
-
+                <li><a href="https://www.fitevolution.com">www.FitEvolution.com</a></li>
             </ul>
-            <div class="links">
-                <h4>Fitness</h4>
-                <div class="socials">
-                    <a href="#">
-                        <div class="social">
-                            <img src="imagenes/facebook.png" alt="">
-                    </a>
-                </div>
-                <div class="social">
-                    <img src="imagenes/twitter.png" alt=""></a>
-                </div>
-                <div class="social">
-                    <img src="imagenes/instagram.jpg" alt=""></a>
-                </div>
-
-            </div>
         </div>
-
+        
+        <div class="links">
+            <h4>Fitness</h4>
+            <div class="socials">
+                <a href="https://facebook.com/fitevolution" aria-label="Facebook">
+                    <div class="social">
+                        <img src="imagenes/facebook.png" alt="Facebook">
+                    </div>
+                </a>
+                <a href="https://twitter.com/fitevolution" aria-label="Twitter">
+                    <div class="social">
+                        <img src="imagenes/twitter.png" alt="Twitter">
+                    </div>
+                </a>
+                <a href="https://instagram.com/fitevolution" aria-label="Instagram">
+                    <div class="social">
+                        <img src="imagenes/instagram.jpg" alt="Instagram">
+                    </div>
+                </a>
+            </div>
         </div>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Función para manejar los botones "Ver más"
+        document.addEventListener('DOMContentLoaded', function() {
+            const botones = document.querySelectorAll('.ver-mas');
+            botones.forEach(function(boton) {
+                boton.addEventListener('click', function() {
+                    const producto = this.getAttribute('data-producto');
+                    alert('Has seleccionado: ' + producto + '. Pronto verás más detalles.');
+                    
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
